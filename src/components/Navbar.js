@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+
 const Navbar = () => {
 
     const [active, setActive] = useState('')
@@ -16,32 +18,46 @@ const Navbar = () => {
 
     }, [active])
 
+    const navbar_variant = {
+        hidden: {
+            y: '-30vh',
+            oppacity: 0
+        },
+        visible: {
+            y: '0',
+            oppacity: 1
+        }
+    }
+
     return (
-        <div className="navbar">
-            <div className="navbar__active">
+        <motion.div className="navbar"
+            variants={ navbar_variant}
+            initial='hidden'
+            animate='visible'
+        >
+            <div className="navbar_active">
                 {active}
             </div>
 
-            <div className="navbar__items">
+            <div className="navbar_items">
                 {active !== 'About' &&
                     <Link to="/">
-                        <div className="navbar__item" onClick={() => setActive('About')}>About</div>
+                        <div className="navbar_item" onClick={() => setActive('About')}>About</div>
                     </Link>
                 }
                 {active !== 'Resume' ?
                     <Link to="/resume">
-                        <div className="navbar__item" onClick={() => setActive('Resume')}>Resume</div>
+                        <div className="navbar_item" onClick={() => setActive('Resume')}>Resume</div>
                     </Link> : null
                 }
 
                 {active !== 'Projects' &&
                     <Link to="/projects">
-                        <div className="navbar__item" onClick={() => setActive('Projects')}>Projects</div>
+                        <div className="navbar_item" onClick={() => setActive('Projects')}>Projects</div>
                     </Link>
                 }
             </div>
-
-        </div>
+        </motion.div>
     );
 };
 
