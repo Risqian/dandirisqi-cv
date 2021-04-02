@@ -5,7 +5,7 @@ import instagram from '../assets/icons/instagram.svg'
 import github from '../assets/icons/github.svg'
 import pin from '../assets/icons/pin.svg'
 import tie from '../assets/icons/tie.svg'
-import mightycoder from '../assets/mightycoder.svg'
+import dandi from '../assets/dandi.svg'
 import resume from '../assets/resume.pdf'
 
 const Sidebar = () => {
@@ -14,8 +14,8 @@ const Sidebar = () => {
     }
     return (
         <div className="sidebar">
-            <img src={mightycoder} alt="avatar" className="sidebar__avatar" />
-            <div className="sidebar__name">Sumit <span>Dey</span> </div>
+            <img src={dandi} alt="avatar" className="sidebar__avatar" />
+            <div className="sidebar__name">Dandi <span>Risqi</span> </div>
             <div className="sidebar__item sidebar__title">Web Developer</div>
             <a href={resume} download="resume.pdf">
                 <div className="sidebar__item sidebar__resume">
@@ -28,13 +28,13 @@ const Sidebar = () => {
             </figure>
             <div className="sidebar__contact">
                 <div className="sidebar__item sidebar__github">
-                    <a href="!#"><img src={github} alt="github" className="sidebar__icon mr-3" />github</a>
+                    <a href="!#"><img src={github} alt="github" className="sidebar__icon mr-3" />github.com/Risqian</a>
                 </div>
                 <div className="sidebar__location">
                     <img src={pin} alt="location" className="sidebar__icon mr-3" />
-                    Kolkata, India</div>
-                <div className="sidebar__item">code.sumax@gmail.com</div>
-                <div className="sidebar__item">7835323423/9876543510</div>
+                    Jakarta Selatan</div>
+                <div className="sidebar__item">risqian99@gmail.com</div>
+                <div className="sidebar__item">+62 81292568225</div>
             </div>
             <div className="sidebar__item sidebar__email" onClick={handleEmailMe}>email me</div>
         </div>

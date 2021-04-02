@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather:wght@300&display=swap');
 
 body {
-    background-image: linear-gradient(to right bottom, #00F260, #0575E6);
+    background-image: linear-gradient(to right bottom, #4286f4, #373B44);
     background-attachment: fixed;
     color: #354538;
 }
@@ -11,7 +11,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(to right bottom, #00F260, #0575E6);
+    background-image: linear-gradient(to right bottom, #4286f4, #373B44);
 
 }
 
@@ -73,7 +73,7 @@ a:hover {
 }
 
 .sidebar__name>span {
-    color: #00F260;
+    color: #4286f4;
 }
 
 .sidebar__item {
@@ -97,7 +97,7 @@ a:hover {
 }
 
 .sidebar__email {
-    background-image: linear-gradient(to right bottom, #00F260, #0575E6);
+    background-image: linear-gradient(to right bottom, #4286f4, #373B44);
 
     border-radius: 30px;
     color: #fff;
@@ -132,7 +132,7 @@ a:hover {
     font-size: 2rem;
     font-weight: 700;
     color: #354358;
-    border-bottom: 4px solid #00F260;
+    border-bottom: 4px solid #4286f4;
 }
 
 .navbar__item {
@@ -144,7 +144,7 @@ a:hover {
 }
 
 .navbar__item:hover {
-    background: -webkit-linear-gradient(#00F260, #0575E6);
+    background: -webkit-linear-gradient(#4286f4, #373B44);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent
@@ -247,7 +247,7 @@ a:hover {
 }
 
 .bar__wrapper {
-    background-image: linear-gradient(90deg, #00F260, #0575E6);
+    background-image: linear-gradient(90deg, #4286f4, #373B44);
     border-radius: 20px;
     padding: 4px 14px;
     color: #fff;
@@ -272,7 +272,7 @@ a:hover {
     width: 100%;
     height: 80%;
     border-radius: 30px;
-    border: 1px solid #00F260;
+    border: 1px solid #4286f4;
     transition: transform 0.3s linear;
 }
 
